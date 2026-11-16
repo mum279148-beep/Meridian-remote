@@ -1,0 +1,8 @@
+{
+  "name": "MERIDIAN Remote Access",
+  "description": "Consent-first enterprise remote support management dashboard with temporary invitation links, Supabase authentication, Cloudflare Pages support, and RustDesk integration architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
