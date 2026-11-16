@@ -132,9 +132,11 @@ export function AdminLoginView({ bootstrap, onAuthenticated }: AdminLoginViewPro
             <span>
               Runtime:{' '}
               <span className="text-slate-300 font-medium">
-                {bootstrap.deploymentRuntime === 'cloudflare_pages'
-                  ? 'Cloudflare Pages'
-                  : 'Node Express'}
+                {bootstrap.deploymentRuntime === 'cloudflare_workers'
+                  ? 'Cloudflare Workers'
+                  : bootstrap.deploymentRuntime === 'cloudflare_pages'
+                    ? 'Cloudflare Pages'
+                    : 'Node Express'}
               </span>
             </span>
           </div>
